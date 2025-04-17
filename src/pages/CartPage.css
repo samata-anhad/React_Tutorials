@@ -1,0 +1,147 @@
+/* src/Components/CartPage/CartPage.css */
+
+.cart-page {
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.cart-page h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.cart-item-details p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #21867a;
+}
+
+.cart-item-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #333;
+}
+
+.remove-button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  background-color: #e55d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+
+.remove-button:hover {
+  background-color: #d94d42;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.checkout-button {
+  padding: 12px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #e55d4f;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-details {
+    margin-top: 10px;
+  }
+
+  .quantity-controls {
+    margin-top: 10px;
+  }
+
+  .total-price {
+    flex-direction: column;
+    text-align: center;
+  }
+}
